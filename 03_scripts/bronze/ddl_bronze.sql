@@ -10,8 +10,22 @@ Purpose:
 Note:
     - Existing tables are dropped before recreation. Any data stored in
       these tables will be permanently deleted.
-    - The Bronze Layer stores raw source data without applying transformations.
-    - Tables are organized under the bronze schema.
+    - The Bronze Layer stores raw source data without applying transformations
+      to preserve the original structure of the source files.
+    - The tables are designed to match the structure of the incoming CRM
+      and ERP CSV files.
+    - The Bronze Layer tables are created under the bronze schema.
+
+Target:
+    DataWarehouse -> Bronze Schema
+
+Tables Created:
+    - bronze.crm_cust_info
+    - bronze.crm_prd_info
+    - bronze.crm_sales_details
+    - bronze.erp_cust_az12
+    - bronze.erp_loc_a101
+    - bronze.erp_px_cat_g1v2
 
 ===============================================================================
 */

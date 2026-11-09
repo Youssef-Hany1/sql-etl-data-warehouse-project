@@ -10,9 +10,22 @@ Purpose:
 Note:
     - Existing tables are dropped before recreation. Any data stored in
       these tables will be permanently deleted.
+    - The Silver Layer stores cleaned and standardized data after applying
+      data quality checks and transformations to the raw Bronze Layer data.
     - The dwh_create_date column automatically records the date and time
       when a record is inserted, using its default value.
     - The Silver Layer tables are created under the silver schema.
+
+Target:
+    DataWarehouse -> Silver Schema
+
+Tables Created:
+    - silver.crm_cust_info
+    - silver.crm_prd_info
+    - silver.crm_sales_details
+    - silver.erp_cust_az12
+    - silver.erp_loc_a101
+    - silver.erp_px_cat_g1v2
 
 ===============================================================================
 */
