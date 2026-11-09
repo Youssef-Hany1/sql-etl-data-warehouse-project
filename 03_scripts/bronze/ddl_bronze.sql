@@ -1,13 +1,19 @@
 /*
-Title: Bronze Layer Tables Initialization
+===============================================================================
+Title:          Bronze Layer Tables Initialization
+===============================================================================
 
 Purpose:
-Create the Bronze Layer tables in the DataWarehouse database
-to store raw CRM and ERP source data.
+    Create the Bronze Layer tables in the DataWarehouse database to store
+    raw CRM and ERP source data.
 
 Note:
-Existing tables are dropped before recreation. Any data stored
-in these tables will be permanently deleted.
+    - Existing tables are dropped before recreation. Any data stored in
+      these tables will be permanently deleted.
+    - The Bronze Layer stores raw source data without applying transformations.
+    - Tables are organized under the bronze schema.
+
+===============================================================================
 */
 
 USE DataWarehouse;
