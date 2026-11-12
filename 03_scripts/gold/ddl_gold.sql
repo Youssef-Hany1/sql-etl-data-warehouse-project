@@ -32,7 +32,7 @@ Views Created:
 USE DataWarehouse;
 GO
 
-IF OBJECT_ID ('gold.dim_customer', 'U') IS NOT NULL
+IF OBJECT_ID ('gold.dim_customers', 'V') IS NOT NULL
 	DROP VIEW gold.dim_customers;
 GO
 
@@ -59,7 +59,7 @@ CREATE VIEW gold.dim_customers AS (
 );
 GO
 
-IF OBJECT_ID ('gold.dim_products', 'U') IS NOT NULL
+IF OBJECT_ID ('gold.dim_products', 'V') IS NOT NULL
 	DROP VIEW gold.dim_products;
 GO
 
@@ -83,7 +83,7 @@ CREATE VIEW gold.dim_products AS (
 );
 GO
 
-IF OBJECT_ID ('gold.fact_sales', 'U') IS NOT NULL
+IF OBJECT_ID ('gold.fact_sales', 'V') IS NOT NULL
 	DROP VIEW gold.fact_sales;
 GO
 
